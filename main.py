@@ -18,7 +18,11 @@ def main():
         codeCaesar.saludar()
         
     elif (opt == 2):
-        codeVigenere.saludar()
+        # Entradad de datos para el cifrado de Vigenere
+        text = str(input("~ Ingresa el texto a cifrar: "))
+        key = str(input("~ Ingresa la clave: "))
+
+        print(f"[*] Texto cifrado: {codeVigenere.vigenere_chiper(text, key)}")
 
     elif (opt == 3):
         print("Saliendo . . .\n")
